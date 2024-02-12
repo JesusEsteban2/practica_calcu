@@ -21,10 +21,10 @@
             android:padding="20dp">
 
             <TextView
-                android:id="@+id/textResultado"
+                android:id="@+id/textResult"
                 android:layout_width="match_parent"
                 android:layout_height="65dp"
-                android:text="TextView"
+                android:text="0"
                 android:textAlignment="viewEnd"
                 android:textSize="40dp" />
 
@@ -60,22 +60,22 @@
                 android:outlineAmbientShadowColor="@color/cardview_dark_background"
                 >
                 <Button
-                    android:id="@+id/button"
+                    android:id="@+id/butNu9"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="9" />
                 <Button
-                    android:id="@+id/button"
+                    android:id="@+id/butNu6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="6" />
                 <Button
-                    android:id="@+id/button"
+                    android:id="@+id/butnu3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="3" />
                 <Button
-                    android:id="@+id/button"
+                    android:id="@+id/butNu0"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="0" />
@@ -90,22 +90,22 @@
                 android:outlineAmbientShadowColor="@color/cardview_dark_background"
                 >
                 <Button
-                    android:id="@+id/button"
+                    android:id="@+id/butNu8"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="8" />
                 <Button
-                    android:id="@+id/button"
+                    android:id="@+id/butNu5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="5" />
                 <Button
-                    android:id="@+id/button"
+                    android:id="@+id/butNu2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="2" />
                 <Button
-                    android:id="@+id/button"
+                    android:id="@+id/butDot"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="." />
@@ -120,22 +120,22 @@
                 android:outlineAmbientShadowColor="@color/cardview_dark_background"
                 >
                 <Button
-                    android:id="@+id/button"
+                    android:id="@+id/butNu7"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="7" />
                 <Button
-                    android:id="@+id/button"
+                    android:id="@+id/butNu4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="4" />
                 <Button
-                    android:id="@+id/button"
+                    android:id="@+id/butNu1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="1" />
                 <Button
-                    android:id="@+id/button"
+                    android:id="@+id/butBack"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="<-" />

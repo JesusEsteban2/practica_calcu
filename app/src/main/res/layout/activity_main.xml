@@ -30,10 +30,10 @@
 
         </LinearLayout>
         <LinearLayout
-            android:id="@+id/numKbr"
+            android:id="@+id/spcKey"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="40"
+            android:layout_weight="1"
             android:orientation="horizontal"
             android:padding="10dp"
             android:background="@color/teal_700"
@@ -70,7 +70,7 @@
                     android:layout_height="wrap_content"
                     android:text="6" />
                 <Button
-                    android:id="@+id/butnu3"
+                    android:id="@+id/butNu3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="3" />
@@ -138,7 +138,7 @@
                     android:id="@+id/butBack"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="<-" />
+                    android:text="Del" />
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -150,22 +150,22 @@
                 android:outlineAmbientShadowColor="@color/cardview_dark_background"
                 >
                 <Button
-                    android:id="@+id/button"
+                    android:id="@+id/butMult"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="*" />
                 <Button
-                    android:id="@+id/button"
+                    android:id="@+id/butDivi"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="/" />
                 <Button
-                    android:id="@+id/button"
+                    android:id="@+id/butPlus"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="+" />
                 <Button
-                    android:id="@+id/button"
+                    android:id="@+id/butMin"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="-" />

@@ -25,6 +25,7 @@ class MainActivity : AppCompatActivity() {
     var operando:Double=0.0
     var resultado:Double= 0.0
     var operador:String=""
+    var preBorrar:Boolean=false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -90,14 +91,17 @@ class MainActivity : AppCompatActivity() {
             when (operador){
                 "+" -> {resultado = operando+textResult.text.toString().toDouble()
                     textResult.text=resultado.toString() }
-                "-" -> {resultado = operando+textResult.text.toString().toDouble()
+                "-" -> {resultado = operando-textResult.text.toString().toDouble()
                     textResult.text=resultado.toString() }
-                "/" -> {resultado = operando+textResult.text.toString().toDouble()
+                "/" -> {resultado = operando/textResult.text.toString().toDouble()
                     textResult.text=resultado.toString() }
-                "*" -> {resultado = operando+textResult.text.toString().toDouble()
+                "*" -> {resultado = operando*textResult.text.toString().toDouble()
                     textResult.text=resultado.toString() }
                 else -> {return}
             }
+            operador=op
+            operando=resultado
+            preBorrar=true
         }
     }
 
@@ -106,5 +110,6 @@ class MainActivity : AppCompatActivity() {
         resultado= 0.0
         operador=""
         textResult.text="0"
+        preBorrar=false
     }
 }

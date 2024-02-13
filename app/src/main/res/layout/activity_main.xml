@@ -30,7 +30,7 @@
 
         </LinearLayout>
         <LinearLayout
-            android:id="@+id/spcKey"
+            android:id="@+id/hisText"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="2"
@@ -39,6 +39,13 @@
             android:background="@color/teal_700"
             android:outlineAmbientShadowColor="@color/cardview_dark_background"
             >
+
+            <TextView
+                android:id="@+id/histoText"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="TextView" />
 
         </LinearLayout>
         <LinearLayout

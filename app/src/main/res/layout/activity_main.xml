@@ -15,7 +15,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_weight="0"
             android:orientation="horizontal"
             android:background="@color/teal_200"
             android:padding="20dp">
@@ -25,26 +25,27 @@
                 android:layout_width="match_parent"
                 android:layout_height="65dp"
                 android:text="0"
-                android:textAlignment="viewEnd"
+                android:textAlignment="textEnd"
                 android:textSize="40dp" />
 
         </LinearLayout>
         <LinearLayout
             android:id="@+id/spcKey"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:layout_weight="2"
             android:orientation="horizontal"
             android:padding="10dp"
             android:background="@color/teal_700"
             android:outlineAmbientShadowColor="@color/cardview_dark_background"
             >
+
         </LinearLayout>
         <LinearLayout
             android:id="@+id/numKbr"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="40"
+            android:layout_height="0dp"
+            android:layout_weight="2"
             android:orientation="horizontal"
             android:padding="10dp"
             android:background="@color/teal_700"
@@ -53,27 +54,27 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="10"
+                android:layout_weight="1"
                 android:orientation="vertical"
                 android:padding="10dp"
                 android:background="@color/teal_700"
                 android:outlineAmbientShadowColor="@color/cardview_dark_background"
                 >
                 <Button
-                    android:id="@+id/butNu9"
+                    android:id="@+id/butNu7"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="9" />
+                    android:text="7" />
                 <Button
-                    android:id="@+id/butNu6"
+                    android:id="@+id/butNu4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="6" />
+                    android:text="4" />
                 <Button
-                    android:id="@+id/butNu3"
+                    android:id="@+id/butNu1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="3" />
+                    android:text="1" />
                 <Button
                     android:id="@+id/butNu0"
                     android:layout_width="wrap_content"
@@ -83,7 +84,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="10"
+                android:layout_weight="1"
                 android:orientation="vertical"
                 android:padding="10dp"
                 android:background="@color/teal_700"
@@ -112,28 +113,29 @@
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="10"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
                 android:orientation="vertical"
                 android:padding="10dp"
                 android:background="@color/teal_700"
                 android:outlineAmbientShadowColor="@color/cardview_dark_background"
                 >
                 <Button
-                    android:id="@+id/butNu7"
+                    android:id="@+id/butNu9"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="7" />
+                    android:text="9" />
                 <Button
-                    android:id="@+id/butNu4"
+                    android:id="@+id/butNu6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="4" />
+                    android:text="6" />
                 <Button
-                    android:id="@+id/butNu1"
+                    android:id="@+id/butNu3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="1" />
+                    android:text="3" />
+
                 <Button
                     android:id="@+id/butBack"
                     android:layout_width="wrap_content"
@@ -142,8 +144,8 @@
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="10"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
                 android:orientation="vertical"
                 android:padding="10dp"
                 android:background="@color/teal_700"
@@ -171,7 +173,22 @@
                     android:text="-" />
             </LinearLayout>
         </LinearLayout>
-
+        <LinearLayout
+        android:id="@+id/especKey"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:background="@color/especColor"
+        >
+        <Button
+            android:id="@+id/butAc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ac"
+            android:backgroundTint="@color/especBut"/>
+    </LinearLayout>
     </LinearLayout>
 
 

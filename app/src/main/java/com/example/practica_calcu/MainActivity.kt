@@ -18,7 +18,13 @@ class MainActivity : AppCompatActivity() {
     lateinit var butNu8:Button
     lateinit var butNu9:Button
     lateinit var butBack:Button
+    lateinit var butDot:Button
+    lateinit var butPlus:Button
     lateinit var textResult:TextView
+
+    var operando:Double=0.0
+    var resultado:Double= 0.0
+    var operador:String=""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -35,7 +41,9 @@ class MainActivity : AppCompatActivity() {
         butNu7=findViewById(R.id.butNu7)
         butNu8=findViewById(R.id.butNu8)
         butNu9=findViewById(R.id.butNu9)
+        butDot=findViewById(R.id.butDot)
         butBack=findViewById(R.id.butBack)
+        butPlus=findViewById(R.id.butPlus)
 
         butNu0.setOnClickListener {addDigit('0')}
         butNu1.setOnClickListener {addDigit('1')}
@@ -47,11 +55,14 @@ class MainActivity : AppCompatActivity() {
         butNu7.setOnClickListener {addDigit('7')}
         butNu8.setOnClickListener {addDigit('8')}
         butNu9.setOnClickListener {addDigit('9')}
+        butDot.setOnClickListener {addDigit('.')}
         butBack.setOnClickListener {delDigit()}
-
+        butBack.setOnClickListener {delDigit()}
+        butPlus.setOnClickListener {operar("+")}
         }
     private fun addDigit(c: Char) {
-        if (textResult.text=="0") {
+        // Si el digito es punto decimal y no se ha escrito nada mantener el 0.
+        if (textResult.text=="0" && c!='.') {
             textResult.text=c.toString()
         } else {
             textResult.text=textResult.text.toString()+c.toString()
@@ -60,7 +71,40 @@ class MainActivity : AppCompatActivity() {
 
     private fun delDigit() {
         var long=textResult.length()
+        if (long<2){
+            //Si borra último dígito poner 0
+            textResult.text="0"
+        } else {
+            textResult.text=textResult.text.subSequence(0..(long-2))
+        }
+    }
 
-        textResult.text=textResult.text.subSequence(0..(long-2))
+    private fun operar(op:String){
+        // TODO: Arreglar funcionamiento de suma
+        // Todo: mejor organización del código
+        if (operador=="") {
+            operando= textResult.text.toString().toDouble()
+            textResult.text="0"
+            operador=op
+        } else {
+            when (operador){
+                "+" -> {resultado = operando+textResult.text.toString().toDouble()
+                    textResult.text=resultado.toString() }
+                "-" -> {resultado = operando+textResult.text.toString().toDouble()
+                    textResult.text=resultado.toString() }
+                "/" -> {resultado = operando+textResult.text.toString().toDouble()
+                    textResult.text=resultado.toString() }
+                "*" -> {resultado = operando+textResult.text.toString().toDouble()
+                    textResult.text=resultado.toString() }
+                else -> {return}
+            }
+        }
+    }
+
+    private fun iniciar (){
+        operando=0.0
+        resultado= 0.0
+        operador=""
+        textResult.text="0"
     }
 }
